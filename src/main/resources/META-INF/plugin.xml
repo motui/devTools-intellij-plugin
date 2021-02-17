@@ -1,19 +1,32 @@
-<idea-plugin>
-    <id>com.github.motui.devtoolsintellijplugin</id>
-    <name>devTools-intellij-plugin</name>
-    <vendor>motui</vendor>
+<idea-plugin url="https://github.com/motui/devTools-intellij-plugin">
+    <id>cn.motui.plugin.devtools</id>
+    <name>DevTools</name>
+    <vendor email="it.motuis@gmail.com" url="https://github.com/motui">it.motui</vendor>
 
+    <description><![CDATA[
+      <p><b>devTools plugin for IntelliJ based IDEs.</b></p>
+      <br/>
+      <p>
+      <b>
+      <a href="https://github.com/motui/devTools-intellij-plugin">GitHub</a> |
+      <a href="https://github.com/motui/devTools-intellij-plugin/issues">Issues</a>
+      </b>
+      </p>
+      <br/>
+      <p><b>Features:</b>
+      <ul>
+      </ul>
+      </p>
+    ]]></description>
+
+    <!--suppress PluginXmlValidity -->
+    <change-notes><![CDATA[
+    ]]></change-notes>
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.motui.devtoolsintellijplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.motui.devtoolsintellijplugin.services.MyProjectService"/>
-    </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.motui.devtoolsintellijplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    </extensions>
 </idea-plugin>

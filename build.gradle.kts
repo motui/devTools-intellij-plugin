@@ -75,6 +75,11 @@ detekt {
         xml.enabled = false
         txt.enabled = false
     }
+    ignoreFailures = true
+}
+
+changelog {
+    version = "${project.version}"
 }
 
 tasks {
