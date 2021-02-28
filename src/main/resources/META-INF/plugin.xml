@@ -27,6 +27,13 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="Dev Tools"
+                icon="Icons.DevTools"
+                anchor="right"
+                secondary="true"
+                factoryClass="cn.motui.devtools.ui.MainToolWindowFactory"
+        />
 
     </extensions>
 </idea-plugin>
