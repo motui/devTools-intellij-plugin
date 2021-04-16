@@ -58,7 +58,7 @@ dependencies {
         exclude("com.fasterxml.jackson.core", "jackson-databind")
         exclude("com.fasterxml.jackson.core", "jackson-annotations")
     }
-    implementation("org.json:json:20201115")
+    implementation("org.json:json:20210307")
 }
 
 // Configure gradle-intellij-plugin plugin.
