@@ -43,6 +43,22 @@ repositories {
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.15.0")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.10.2") {
+        exclude("com.fasterxml.jackson.core", "jackson-core")
+        exclude("com.fasterxml.jackson.core", "jackson-databind")
+        exclude("com.fasterxml.jackson.core", "jackson-annotations")
+    }
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.2") {
+        exclude("com.fasterxml.jackson.core", "jackson-core")
+        exclude("com.fasterxml.jackson.core", "jackson-databind")
+        exclude("com.fasterxml.jackson.core", "jackson-annotations")
+    }
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.10.2") {
+        exclude("com.fasterxml.jackson.core", "jackson-core")
+        exclude("com.fasterxml.jackson.core", "jackson-databind")
+        exclude("com.fasterxml.jackson.core", "jackson-annotations")
+    }
+    implementation("org.json:json:20201115")
 }
 
 // Configure gradle-intellij-plugin plugin.

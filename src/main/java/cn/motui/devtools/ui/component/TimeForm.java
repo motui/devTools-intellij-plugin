@@ -16,16 +16,17 @@ public class TimeForm implements ComponentForm {
   protected JBLabel nowLabel;
   protected JBLabel nowTimeLabel;
   protected JBLabel nowTimeFormatLabel;
-  protected JButton formatButton;
+
   protected JBLabel timestampLabel;
   protected JBTextField timestampField;
-  protected ComboBox<Unit> timestampUnitComboBox;
-  protected JBTextField timestampFormatField;
-  protected JBLabel timeFormatLabel;
-  protected JBTextField timeFormatField;
-  protected JBTextField timeFormatTimestampFiled;
+  protected ComboBox<Unit> unitComboBox;
+
   protected JButton timestampButton;
-  protected ComboBox<Unit> timeFormatUnitComboBox;
+  protected JButton formatButton;
+
+  protected JBLabel formatLabel;
+  protected ComboBox<Utc> utcComboBox;
+  protected JBTextField formatField;
 
   @Override
   public JComponent root() {

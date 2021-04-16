@@ -12,7 +12,7 @@ import com.intellij.ui.content.ContentFactory
 class MainToolWindowFactory : ToolWindowFactory, DumbAware {
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
         val contentManager = toolWindow.contentManager
-        val devToolsWindowPanel = DevToolsWindowPanel()
+        val devToolsWindowPanel = DevToolsWindowPanel(project)
         val content = ContentFactory.SERVICE.getInstance().createContent(devToolsWindowPanel, null, false)
         contentManager.addContent(content)
         contentManager.setSelectedContent(content)

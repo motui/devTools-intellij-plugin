@@ -25,6 +25,7 @@
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.yaml</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow
@@ -34,6 +35,5 @@
                 secondary="true"
                 factoryClass="cn.motui.devtools.ui.MainToolWindowFactory"
         />
-
     </extensions>
 </idea-plugin>
