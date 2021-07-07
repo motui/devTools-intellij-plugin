@@ -48,7 +48,7 @@ dependencies {
         exclude("com.fasterxml.jackson.core", "jackson-databind")
         exclude("com.fasterxml.jackson.core", "jackson-annotations")
     }
-    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.10.2") {
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.4") {
         exclude("com.fasterxml.jackson.core", "jackson-core")
         exclude("com.fasterxml.jackson.core", "jackson-databind")
         exclude("com.fasterxml.jackson.core", "jackson-annotations")
